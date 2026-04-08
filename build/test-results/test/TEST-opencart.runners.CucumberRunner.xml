@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="opencart.runners.CucumberRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-08T19:34:54.745Z" hostname="DESKTOP-9NFJQ0H" time="32.606">
+  <properties/>
+  <testcase name="Comprar dos productos como invitado hasta la confirmación" classname="opencart.runners.CucumberRunner" time="32.606"/>
+  <system-out><![CDATA[
+?[1mEscenario:?[22m Comprar dos productos como invitado hasta la confirmación                                                                                                                         ?[90m# classpath:features/flujo_compra.feature:7?[39m
+  ?[32m✔?[39m ?[32m?[1mDado ?[22mque el comprador navega a la tienda OpenCart?[39m                                                                                                                                        ?[90m# opencart.stepdefinitions.FlujoDCompraStepDefinitions.queElCompradorNavegaALaTienda()?[39m
+  ?[32m✔?[39m ?[32m?[1mCuando ?[22magrega el producto ?[1m"MacBook"?[22m al carrito?[39m                                                                                                                                           ?[90m# opencart.stepdefinitions.FlujoDCompraStepDefinitions.agregaElProductoAlCarrito(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mY ?[22magrega el producto ?[1m"iPhone"?[22m al carrito?[39m                                                                                                                                                 ?[90m# opencart.stepdefinitions.FlujoDCompraStepDefinitions.agregaElProductoAlCarrito(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mY ?[22mvisualiza el carrito de compras?[39m                                                                                                                                                        ?[90m# opencart.stepdefinitions.FlujoDCompraStepDefinitions.visualizaElCarritoDeCompras()?[39m
+  ?[32m✔?[39m ?[32m?[1mY ?[22mprocede al checkout como invitado?[39m                                                                                                                                                      ?[90m# opencart.stepdefinitions.FlujoDCompraStepDefinitions.procedeAlCheckoutComoInvitado()?[39m
+  ?[32m✔?[39m ?[32m?[1mY ?[22mcompleta los datos de facturación con nombre ?[1m"John"?[22m apellido ?[1m"Doe"?[22m email ?[1m"guest@test.com"?[22m telefono ?[1m"1234567890"?[22m direccion ?[1m"123 Main Street"?[22m ciudad ?[1m"Los Angeles"?[22m codigo_postal ?[1m"90001"?[22m?[39m ?[90m# opencart.stepdefinitions.FlujoDCompraStepDefinitions.completaLosDatosDeFacturacion(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mY ?[22mselecciona el método de envío disponible?[39m                                                                                                                                               ?[90m# opencart.stepdefinitions.FlujoDCompraStepDefinitions.seleccionaElMetodoDeEnvio()?[39m
+  ?[32m✔?[39m ?[32m?[1mY ?[22mconfirma el método de pago aceptando los términos?[39m                                                                                                                                      ?[90m# opencart.stepdefinitions.FlujoDCompraStepDefinitions.confirmaElMetodoDePago()?[39m
+  ?[32m✔?[39m ?[32m?[1mY ?[22mconfirma el pedido?[39m                                                                                                                                                                     ?[90m# opencart.stepdefinitions.FlujoDCompraStepDefinitions.confirmaElPedido()?[39m
+  ?[32m✔?[39m ?[32m?[1mEntonces ?[22mel comprador ve el mensaje de confirmación ?[1m"Your order has been placed!"?[22m?[39m                                                                                                        ?[90m# opencart.stepdefinitions.FlujoDCompraStepDefinitions.elCompradorVeElMensajeDeConfirmacion(java.lang.String)?[39m
+]]></system-out>
+  <system-err><![CDATA[abr. 08, 2026 2:35:00 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 146, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 146
+abr. 08, 2026 2:35:27 P. M. org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
+WARNING: TestEngine with ID 'cucumber' encountered a non-critical issue during test discovery:
+
+(1) [WARNING] The classpath resource selector 'features' should not be used to select features in a package. Use the package selector with 'features' instead
+]]></system-err>
+</testsuite>
